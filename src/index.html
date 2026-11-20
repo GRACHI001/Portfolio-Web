@@ -179,6 +179,9 @@
     .nav-scrim.open{display:block;}
   }
   @media (max-width:400px){h1.hero-title{font-size:1.6rem;}.hero-cta{flex-direction:column;}}
+
+.study-list{margin:6px 0 0;padding-left:18px;}.study-list li{margin:4px 0;}
+.project{margin-top:6px;border:1px solid var(--accent);background:var(--accent-soft);border-radius:4px;padding:18px 20px;}.project h4{font-size:1.1rem;margin:8px 0 2px;}.project .proj-tools{font-size:0.82rem;color:var(--ink-faint);margin:0 0 10px;}.project p{font-size:0.92rem;margin:0 0 10px;}.project p:last-child{margin-bottom:0;}
 </style>
 </head>
 <body>
@@ -282,6 +285,17 @@
         <div class="case-meta"><div class="case-sector">Payments</div><div class="case-org">Novac Payments</div><div class="case-when">Feb 2025 – Present</div></div>
         <div class="case-main"><h3>Dispute management</h3><div class="case-row"><div class="case-label">Scope</div><div>Led the dispute management workstream: internal tooling with real daily users in support and operations.</div></div><div class="case-row"><div class="case-label">Approach</div><div>Defined the success metrics, redesigned the resolution process and rebuilt the workstream the support and operations teams work in.</div></div><div class="case-row"><div class="case-label">Result</div><div class="case-stats"><div><div class="stat-num">−1.5 days</div><div class="stat-label">dispute resolution time</div></div></div></div></div>
       </article>
+
+    <h3 class="sub-head">Case studies</h3>
+    <p class="section-sub" style="margin:0 0 28px;">Two products I owned, from the problem to what changed.</p>
+      <article class="case">
+        <div class="case-meta"><div class="case-sector">0 to 1</div><div class="case-org">Novac Payments</div><div class="case-when">2025 – 2026 · Roadmap owner</div></div>
+        <div class="case-main"><h3>Novac Business Mobile App</h3><div class="case-row"><div class="case-label">Problem</div><div>Merchants only had Novac on the web, and they wanted to use it on the go, not just at a desk. Onboarding was also holding merchants back: there were too many steps, verification was slow, and merchants were dropping off before they finished. The mobile app was the chance to fix both together.</div></div><div class="case-row"><div class="case-label">Decision</div><div>The MVP covered the full loop of a merchant&rsquo;s money:<ul class="study-list"><li><strong>Getting started:</strong> onboarding</li><li><strong>Money in:</strong> collections in different currencies and payment links</li><li><strong>Money out:</strong> payouts to banks and Novac-to-Novac payouts</li><li><strong>Proof:</strong> transaction history and receipts</li></ul><p style="margin:10px 0 0;">I deliberately held back biometric login, MFA, bank statements and bill payments, to get the core money flows in front of merchants first. Biometric login and MFA followed in the first half of 2026, and bill payments later that year.</p></div></div><div class="case-row"><div class="case-label">What changed</div><div><div class="case-stats"><div><div class="stat-num">−28%</div><div class="stat-label">merchant drop-off in onboarding</div></div><div><div class="stat-num">50%</div><div class="stat-label">of churned users returned</div></div></div><p style="margin:12px 0 0;">Merchants can now run their business from their phones. The app went from design to a live product, and has kept growing with security, notifications and in-app guidance.</p></div></div></div>
+      </article>
+      <article class="case">
+        <div class="case-meta"><div class="case-sector">Healthcare</div><div class="case-org">Zealarax Technologies</div><div class="case-when">Oct 2022 &ndash; Nov 2024</div></div>
+        <div class="case-main"><h3>Hospital management system</h3><div class="case-row"><div class="case-label">Problem</div><div>Four things were going wrong at once:<ul class="study-list"><li><strong>Booking:</strong> patients had to book appointments just to find out when doctors were available, and whether they needed to come in person or could consult virtually.</li><li><strong>Records:</strong> the hospital couldn&rsquo;t consolidate patient information and activity, because records were scattered across different systems.</li><li><strong>Consistency:</strong> patient information and records were also inconsistent from one system to the next.</li><li><strong>Patient visibility:</strong> patients couldn&rsquo;t track their own appointments, information or activity in the hospital.</li></ul></div></div><div class="case-row"><div class="case-label">What I owned</div><div>The end-to-end product lifecycle of a hospital management system covering patient records, scheduling and clinical operations.</div></div><div class="case-row"><div class="case-label">Decision</div><div>I brought patient records into one consistent system, and covered scheduling and clinical operations in the same product instead of leaving them in separate tools. I added appointment notifications for both patients and health practitioners, so each side knows what&rsquo;s booked and when. Because the system holds sensitive patient information, I also delivered role-based access controls and audit trails, so each person sees only what their role allows and every action is recorded.</div></div><div class="case-row"><div class="case-label">What changed</div><div><div class="case-stats"><div><div class="stat-num">−25%</div><div class="stat-label">patient no-shows</div></div><div><div class="stat-num">−40%</div><div class="stat-label">patient data lookup time</div></div></div><ul class="study-list"><li>The no-show drop was driven by appointment notifications to patients and practitioners</li><li>Patients and health professionals can easily reach consistent information, held in one place</li><li>Role-based access is enforced for stronger security, with every action recorded</li></ul></div></div></div>
+      </article>
   </div>
 </section>
 
@@ -347,14 +361,16 @@
         </ul>
       </div>
       <div class="case-card">
-        <div class="case-eyebrow">Currently learning</div>
+        <div class="case-eyebrow">Currently learning, and building</div>
         <h3>AI automation with n8n</h3>
         <p>I'm learning to build workflow automations in n8n, and exploring AI-native applications and emerging AI workflows.</p>
-        <!-- N8N PROJECT: replace this placeholder card with the real project (what it does, tools used, result). -->
-        <div class="placeholder">
-          <span class="badge">Coming soon</span>
-          <h4>My n8n workflow project</h4>
-          <p>A workflow I built myself will be added here.</p>
+        <div class="project">
+          <span class="badge">In progress</span>
+          <h4>AI Response Evaluator</h4>
+          <p class="proj-tools">n8n · Google Gemini · Google Sheets</p>
+          <p><strong>The problem.</strong> AI answers can sound confident and still be incomplete or wrong, and a model grading another model can miss what a subject expert would catch.</p>
+          <p><strong>What I built.</strong> An n8n workflow where I submit a prompt and two AI responses through a form. An AI judge scores each from 1 to 5 on accuracy, completeness, instruction-following and clarity, with a reason for each score. I then record my own scores and verdict next to the AI&rsquo;s, and note where I disagree.</p>
+          <p><strong>What I found.</strong> On a paracetamol question, the AI judge scored one response 5/5 on every criterion and picked it as better. I judged the other response more complete, because it covers the overdose antidote (N-acetylcysteine), which the first omits. My pharmacology background caught what the AI judge missed.</p>
         </div>
       </div>
     </div>
